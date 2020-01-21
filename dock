@@ -1,0 +1,24 @@
+#!/bin/bash
+function displayDock(){
+    local isDisplay=$1
+    gsettings set org.gnome.shell.extensions.dash-to-dock autohide $isDisplay
+    gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed $isDisplay
+    gsettings set org.gnome.shell.extensions.dash-to-dock intellihide $isDisplay
+}
+
+function displayHelp(){
+    echo "============== dock: Usage =============="
+    echo "dock [option]"
+    echo "Options:"
+    echo "  - show: show dock"
+    echo "  - hide: hide dock"
+}
+
+if [ "$1" = "show" ]; then
+    displayDock true
+elif [ "$1" = "hide" ]; then
+    displayDock false
+else
+    displayHelp
+fi
+
