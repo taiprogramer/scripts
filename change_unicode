@@ -1,0 +1,153 @@
+#!/bin/sh
+
+# Because My X11 Keyboard config use 2 unicode character to represent 1 Vietnamese character,
+# So I need to change it to 1 unicode represent 1 Vietnamese character.
+
+die() {
+    echo $1
+    exit
+}
+
+help() {
+    echo "Usage: change_unicode [input-file]"
+    die
+}
+
+test -z "$1" && help 
+test -f "$1" || die 'File not found'
+
+sed -i 's/À/À/g' $1
+sed -i 's/Á/Á/g' $1
+sed -i 's/Â/Â/g' $1
+sed -i 's/Ã/Ã/g' $1
+sed -i 's/È/È/g' $1
+sed -i 's/É/É/g' $1
+sed -i 's/Ê/Ê/g' $1
+sed -i 's/Ì/Ì/g' $1
+sed -i 's/Í/Í/g' $1
+sed -i 's/Ò/Ò/g' $1
+sed -i 's/Ó/Ó/g' $1
+sed -i 's/Ô/Ô/g' $1
+sed -i 's/Õ/Õ/g' $1
+sed -i 's/Ù/Ù/g' $1
+sed -i 's/Ú/Ú/g' $1
+sed -i 's/Ý/Ý/g' $1
+sed -i 's/à/à/g' $1
+sed -i 's/á/á/g' $1
+sed -i 's/â/â/g' $1
+sed -i 's/ã/ã/g' $1
+sed -i 's/è/è/g' $1
+sed -i 's/é/é/g' $1
+sed -i 's/ê/ê/g' $1
+sed -i 's/ì/ì/g' $1
+sed -i 's/í/í/g' $1
+sed -i 's/ò/ò/g' $1
+sed -i 's/ó/ó/g' $1
+sed -i 's/ô/ô/g' $1
+sed -i 's/õ/õ/g' $1
+sed -i 's/ù/ù/g' $1
+sed -i 's/ú/ú/g' $1
+sed -i 's/ý/ý/g' $1
+sed -i 's/Ỳ/Ỳ/g' $1
+sed -i 's/Ỹ/Ỹ/g' $1
+sed -i 's/ỳ/ỳ/g' $1
+sed -i 's/ỹ/ỹ/g' $1
+sed -i 's/Ỷ/Ỷ/g' $1
+sed -i 's/ỷ/ỷ/g' $1
+sed -i 's/Ỵ/Ỵ/g' $1
+sed -i 's/ỵ/ỵ/g' $1
+sed -i 's/ự/ự/g' $1
+sed -i 's/Ự/Ự/g' $1
+sed -i 's/ử/ử/g' $1
+sed -i 's/Ử/Ử/g' $1
+sed -i 's/ữ/ữ/g' $1
+sed -i 's/Ữ/Ữ/g' $1
+sed -i 's/ừ/ừ/g' $1
+sed -i 's/Ừ/Ừ/g' $1
+sed -i 's/ứ/ứ/g' $1
+sed -i 's/Ứ/Ứ/g' $1
+sed -i 's/ư/ư/g' $1
+sed -i 's/Ư/Ư/g' $1
+sed -i 's/ụ/ụ/g' $1
+sed -i 's/Ụ/Ụ/g' $1
+sed -i 's/ủ/ủ/g' $1
+sed -i 's/Ủ/Ủ/g' $1
+sed -i 's/ũ/ũ/g' $1
+sed -i 's/Ũ/Ũ/g' $1
+sed -i 's/ợ/ợ/g' $1
+sed -i 's/Ợ/Ợ/g' $1
+sed -i 's/ở/ở/g' $1
+sed -i 's/Ở/Ở/g' $1
+sed -i 's/ỡ/ỡ/g' $1
+sed -i 's/Ỡ/Ỡ/g' $1
+sed -i 's/ờ/ờ/g' $1
+sed -i 's/Ờ/Ờ/g' $1
+sed -i 's/ớ/ớ/g' $1
+sed -i 's/Ớ/Ớ/g' $1
+sed -i 's/ơ/ơ/g' $1
+sed -i 's/Ơ/Ơ/g' $1
+sed -i 's/ộ/ộ/g' $1
+sed -i 's/Ộ/Ộ/g' $1
+sed -i 's/ổ/ổ/g' $1
+sed -i 's/Ổ/Ổ/g' $1
+sed -i 's/ỗ/ỗ/g' $1
+sed -i 's/Ỗ/Ỗ/g' $1
+sed -i 's/ồ/ồ/g' $1
+sed -i 's/Ồ/Ồ/g' $1
+sed -i 's/ố/ố/g' $1
+sed -i 's/Ố/Ố/g' $1
+sed -i 's/ọ/ọ/g' $1
+sed -i 's/Ọ/Ọ/g' $1
+sed -i 's/ỏ/ỏ/g' $1
+sed -i 's/Ỏ/Ỏ/g' $1
+sed -i 's/ị/ị/g' $1
+sed -i 's/Ị/Ị/g' $1
+sed -i 's/ỉ/ỉ/g' $1
+sed -i 's/Ỉ/Ỉ/g' $1
+sed -i 's/ĩ/ĩ/g' $1
+sed -i 's/Ĩ/Ĩ/g' $1
+sed -i 's/ệ/ệ/g' $1
+sed -i 's/Ệ/Ệ/g' $1
+sed -i 's/ể/ể/g' $1
+sed -i 's/Ể/Ể/g' $1
+sed -i 's/ễ/ễ/g' $1
+sed -i 's/Ễ/Ễ/g' $1
+sed -i 's/ề/ề/g' $1
+sed -i 's/Ề/Ề/g' $1
+sed -i 's/ế/ế/g' $1
+sed -i 's/Ế/Ế/g' $1
+sed -i 's/ẹ/ẹ/g' $1
+sed -i 's/Ẹ/Ẹ/g' $1
+sed -i 's/ẻ/ẻ/g' $1
+sed -i 's/Ẻ/Ẻ/g' $1
+sed -i 's/ẽ/ẽ/g' $1
+sed -i 's/Ẽ/Ẽ/g' $1
+sed -i 's/ặ/ặ/g' $1
+sed -i 's/Ặ/Ặ/g' $1
+sed -i 's/ẳ/ẳ/g' $1
+sed -i 's/Ẳ/Ẳ/g' $1
+sed -i 's/ẵ/ẵ/g' $1
+sed -i 's/Ẵ/Ẵ/g' $1
+sed -i 's/ằ/ằ/g' $1
+sed -i 's/Ằ/Ằ/g' $1
+sed -i 's/ắ/ắ/g' $1
+sed -i 's/Ắ/Ắ/g' $1
+sed -i 's/ă/ă/g' $1
+sed -i 's/Ă/Ă/g' $1
+sed -i 's/ậ/ậ/g' $1
+sed -i 's/Ậ/Ậ/g' $1
+sed -i 's/ẩ/ẩ/g' $1
+sed -i 's/Ẩ/Ẩ/g' $1
+sed -i 's/ẫ/ẫ/g' $1
+sed -i 's/Ẫ/Ẫ/g' $1
+sed -i 's/ầ/ầ/g' $1
+sed -i 's/Ầ/Ầ/g' $1
+sed -i 's/ấ/ấ/g' $1
+sed -i 's/Ấ/Ấ/g' $1
+sed -i 's/ạ/ạ/g' $1
+sed -i 's/Ạ/Ạ/g' $1
+sed -i 's/ả/ả/g' $1
+sed -i 's/Ả/Ả/g' $1
+sed -i 's/đ/đ/g' $1
+sed -i 's/Đ/Đ/g' $1
+
