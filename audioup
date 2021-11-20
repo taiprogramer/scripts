@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+#!/bin/sh
+
+# pactl --version
+# pactl 15.0
+# Compiled with libpulse 15.0.0
+# Linked with libpulse 15.0.0
+
+# Increase PulseAudio sink (speaker) volume by 5% and make sure it can not over
+# 100%
+vol=`pactl get-sink-volume @DEFAULT_SINK@ | grep -Eo '[0-9]{1,3}%' | head -n 1 |
+	grep -Eo '[0-9]{1,3}'`
+
+test $vol -lt 100 && pactl set-sink-volume @DEFAULT_SINK@ +5%
