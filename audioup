@@ -11,4 +11,7 @@
 vol=`pactl get-sink-volume @DEFAULT_SINK@ | grep -Eo '[0-9]{1,3}%' | head -n 1 |
 	grep -Eo '[0-9]{1,3}'`
 
-test $vol -lt 100 && pactl set-sink-volume @DEFAULT_SINK@ +5%
+test $vol -lt 100 && test $vol -lt 95 && \
+	pactl set-sink-volume @DEFAULT_SINK@ +5% || \
+	pactl set-sink-volume @DEFAULT_SINK@ 100%
+
